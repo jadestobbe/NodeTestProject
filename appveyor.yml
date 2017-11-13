@@ -2,14 +2,16 @@ environment:
     matrix:
         - nodejs_version: "9"
 
+#Install scripts that run after repo cloning
 install:
     - ps: Install-Product node $env:nodejs_version
+    #Won't work without setting usafe permisions to true
     - npm config set unsafe-perm true
     - npm install
 
 test_script:
     - node --version
-    - node --version
+    - npm --version
     - npm test
 
 build: off
