@@ -4,6 +4,7 @@ environment:
 
 install:
     - ps: Install-Product node $env:nodejs_version
+    - npm config set unsafe-perm true
     - npm install
 
 test_script:
