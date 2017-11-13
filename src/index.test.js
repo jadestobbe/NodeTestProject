@@ -1,7 +1,9 @@
-var chai = require('chai');
+import {
+    expect
+} from 'chai';
 
 describe('Our first test', () => {
     it('should pass', () => {
-        chai.expect(true).to.equal(true);
+        expect(true).to.equal(true);
     });
 });
