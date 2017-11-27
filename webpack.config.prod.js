@@ -39,7 +39,7 @@ export default {
                 MinifyCSS: true,
                 minifyURLs: true
             },
-            inject: true
+            inject: true,
             trackJSToken: '843d7611b24a4e17ab570f90b1822b8f'
         }),
         new ExtractTextPlugin('[name].[contenthash].css'),
