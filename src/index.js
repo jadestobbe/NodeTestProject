@@ -2,7 +2,8 @@ import {
     getUsers,
     deleteUser
 } from './api/userApi';
-
+/* eslint-disable no-unused-vars */
+import styles from './index.css';
 //populate table
 getUsers().then(result => {
     let usersBody = "";
